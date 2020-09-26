@@ -1,0 +1,23 @@
+<!doctype html> 
+<html lang="fr"> 
+    <head>
+      <meta Charset="UTF-8">
+      <title>Test AngularJS</title> 
+    </head>
+    <body ng-app ng-controller="monControl">
+       
+       <div  ng-repeat="id in infoPerso">
+           <h1>Fiche d'identité n°{{id.id}}</h1>
+           <p >Nom : {{id.nom}}</p>
+           <p >Prénom : {{id.prenom}}</p>
+           <p>Date de Naissance : {{id.dateNaissance}}</p>
+       </div>
+        
+        
+      
+        <!-- Importation depuis le site du Framework --> 
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>    
+        <script src="ex4.js"></script>
+    </body>
+ </html>
+                     

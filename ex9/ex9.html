@@ -1,0 +1,39 @@
+<!doctype html> 
+<html lang="fr"> 
+    <head>
+      <meta Charset="UTF-8">
+      <title>Test AngularJS</title> 
+    </head>
+    <body ng-app="" ng-controller="monControl">
+      <h1>Formulaire d'inscription</h1>
+      <h6>Veuillez remplir les informations concernant les élèves</h6>
+       <form>
+         <p>Nom de l'élève: <input type="text" ng-model="el"/></p>
+         <p>Prénom de l'élève: <input type="text" ng-model="el1"/></p>
+         <p>Date de naissance de l'élève: <input type="date" ng-model="el2"/></p>
+         <p>Classe de l'élève: 
+             <select name="" id="">
+                 <option value="6ème">6ème</option>
+                 <option value="5ème">5ème</option>
+                 <option value="4ème">4ème</option>
+                 <option value="3ème">3ème</option>
+                 <option value="2nde">2nde</option>
+                 <option value="1ère">1ère</option>
+                 <option value="Tle">Tle</option>
+             </select>
+             
+         </p>
+          <button ng-click="ajout()">Valider</button>
+       </form> 
+       <ol>
+          <h5>Liste des élèves inscrits</h5>
+         <li ng-repeat="eleve in meseleves">{{eleve}}</li>
+       </ol> 
+       
+        <!-- Importation depuis le site du Framework --> 
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>    
+        <script src="ex9.js"></script> 
+    </body>
+    
+ </html>
+                     

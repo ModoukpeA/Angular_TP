@@ -1,0 +1,22 @@
+/*Ajout pour ex4*/ 
+body{  
+    background-color:grey;
+     }
+
+ #monTitre{
+  text-align:center;
+  color: orangered; 
+  margin: 30px;  font-size: 60px;
+         } 
+         
+ #titre{
+  color: darkblue; 
+  margin: 30px;
+  font-size: 30px;
+         } 
+  
+ #mesSeries{ 
+  margin-bottom:20px; 
+  margin: 5px;
+  font-size: 20px;
+            } 
